@@ -13,28 +13,35 @@ print("                                  ")
 print("         SCROLL DOWN               ")
 print("                                  ")
 total = maths + urdu + english + islamiat + computer
-percentage = (total * 100) // 500
+percentage = total / 500 * 100
 print("                                  ")
 if percentage >= 90:
     grade = "A+"
+    remarks = f"Outstanding! Excellent performance, {name}!"
 elif percentage >= 80:
     grade = "A"
+    remarks = f"Excellent! Keep up the good work, {name}!"
 elif percentage >= 70:
     grade = "B"
-elif percentage >= 50:
-    grade = "C"
+    remarks = f"Very Good! You're doing great, {name}!"
 elif percentage >= 60:
-    grade = "D"
+    grade = "C"
+    remarks = f"Good! There's room for improvement, {name}."
 elif percentage >= 50:
-    grade = "E"
+    grade = "D"
+    remarks = f"Satisfactory. Need to work harder, {name}."
 else:
-    grade = ("F")
+    grade = "F"
+    remarks = f"Needs Improvement. Please focus on your studies, {name}."
+
 print("                                  ")
 print("          SCROLL DOWN             ")
 print("                                  ")
 print("-----MARK SHEET-----")
 print("Name:", name)
-print("Total Marks:", total,"/500")
+print("Total Marks: 500")
+print("Obtained Marks:", total)
 print("Percentage:", percentage,"%")
 print("Grade:", grade)
+print("Remarks:", remarks)
 print("-------------------")
